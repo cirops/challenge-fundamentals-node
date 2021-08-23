@@ -24,7 +24,6 @@ class TransactionsRepository {
   }
 
   public getBalance(): Balance {
-    // const balance: Balance = ;
     const balance = this.transactions.reduce(
       (acc: Balance, curr: Transaction) =>
         curr.type === 'income'
